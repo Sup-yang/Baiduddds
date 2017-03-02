@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.yang.baidumap.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="卫星"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:id="@+id/btn_satellite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="普通"
+        android:textSize="11sp"
+        android:id="@+id/btn_nomal"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_satellite"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="空白"
+        android:textSize="11sp"
+        android:id="@+id/btn_white"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_nomal"
+        android:background="@drawable/shapes"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:text="定位"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_satellite"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/tv_location"/>
+</RelativeLayout>
